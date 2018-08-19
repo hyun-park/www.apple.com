@@ -1,0 +1,30 @@
+{
+    "name": "apple.com",
+    "version": "0.0.1",
+    "description": "copy www.apple.com",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hyun-park/www.apple.com.git"
+    },
+    "author": "hyun-park",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hyun-park/www.apple.com/issues"
+    },
+    "homepage": "https://github.com/hyun-park/www.apple.com#readme",
+    "dependencies": {
+        "normalize.css": "^8.0.0"
+    },
+    "devDependencies": {
+        "css-loader": "^1.0.0",
+        "node-sass": "^4.9.3",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.22.1",
+        "webpack": "^4.16.5",
+        "webpack-cli": "^3.1.0"
+    }
+}

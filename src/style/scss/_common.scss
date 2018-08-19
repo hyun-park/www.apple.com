@@ -1,0 +1,15 @@
+html {
+    #globalnav {
+        position: fixed;
+        z-index: 9999;
+        margin: 0;
+        background-color: white;
+
+        .gn-content {
+            margin: 0 auto;
+
+            .gn-list {
+            }
+        }
+    }
+}
