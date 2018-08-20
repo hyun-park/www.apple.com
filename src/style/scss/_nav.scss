@@ -1,0 +1,55 @@
+html {
+    // nav style
+
+    @media only screen and (min-width: 320px) {
+    }
+    @media only screen and (min-width: 480px) {
+    }
+    @media only screen and (min-width: 768px) {
+    }
+
+    @media only screen and (max-width: 767px) {
+        #globalnav {
+            overflow-y: hidden;
+            max-height: none;
+
+            .gn-content {
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1044px) {
+        #globalnav {
+            min-width: 320px;
+        }
+    }
+
+    #globalnav {
+        position: fixed;
+        z-index: 9999;
+        margin: 0;
+        width: 100%;
+        min-width: 1024px;
+        height: 48px;
+        max-height: 48px;
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 17px;
+
+        .gn-content {
+            margin: 0 auto;
+            max-width: 980px;
+            padding: 0 22px;
+            position: relative;
+            z-index: 2;
+
+            .gn-list {
+                margin: 0 -10px;
+            }
+        }
+    }
+}

@@ -1,15 +1,41 @@
-html {
-    #globalnav {
-        position: fixed;
-        z-index: 9999;
-        margin: 0;
-        background-color: white;
+#globalnav,
+#globalnav select,
+#globalnav button,
+#gn-segmentbar,
+#gn-segmentbar select,
+#gn-segmentbar button {
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons",
+        "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
 
-        .gn-content {
-            margin: 0 auto;
+#globalnav,
+#globalnav input,
+#globalnav textarea,
+#globalnav select,
+#globalnav button,
+#gn-segmentbar,
+#gn-segmentbar input,
+#gn-segmentbar textarea,
+#gn-segmentbar select,
+#gn-segmentbar button {
+    direction: ltr;
+    text-align: left;
+}
 
-            .gn-list {
-            }
-        }
-    }
+#globalnav,
+#globalnav:before,
+#globalnav:after,
+#globalnav *,
+#globalnav *:before,
+#globalnav *:after,
+#gn-segmentbar,
+#gn-segmentbar:before,
+#gn-segmentbar:after,
+#gn-segmentbar *,
+#gn-segmentbar *:before,
+#gn-segmentbar *:after {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
 }
