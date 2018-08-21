@@ -1,7 +1,0 @@
-html #globalnav {
-  position: fixed;
-  z-index: 9999;
-  margin: 0;
-  background-color: black; }
-  html #globalnav .gn-content {
-    margin: 0 auto; }
