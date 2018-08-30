@@ -28,6 +28,83 @@ html {
                 width: 100%;
                 height: 48px;
                 overflow: hidden;
+
+                .gn-item {
+                    height: 48px;
+                }
+
+                .gn-link {
+                    height: 48px;
+                }
+
+                .gn-menuicon {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 48px;
+                    z-index: 2;
+
+                    .gn-menuicon-label {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        width: 48px;
+                        height: 48px;
+                        cursor: pointer;
+                        z-index: 3;
+
+                        .gn-menuicon-bread {
+                            position: absolute;
+                            z-index: 3;
+                            top: 9px;
+                            left: 9px;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .gn-menuicon-bread-crust {
+                            display: block;
+                            width: 17px;
+                            height: 1px;
+                            background: #fff;
+                            position: absolute;
+                            left: 7px;
+                            z-index: 1;
+                        }
+
+                        /* TODO
+                        *  top / bottom 14px 인데 3px 이 빔
+                        */
+                        .gn-menuicon-bread-crust-top {
+                            top: 11px;
+                        }
+
+                        .gn-menuicon-bread-crust-bottom {
+                            bottom: 11px;
+                        }
+                    }
+                }
+
+                .gn-apple {
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                    width: 48px;
+                    margin-left: -24px;
+                    z-index: 1px;
+
+                    .gn-link-apple {
+                        background-size: 18px 48px;
+                        background-repeat: no-repeat;
+                        background-image: url("https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_small.svg");
+                    }
+                }
+
+                .gn-bag {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
             }
 
             .gn-list {
@@ -70,14 +147,6 @@ html {
                             padding: 0;
                             border: 0;
                         }
-                    }
-
-                    .gn-link-apple {
-                        background-size: 16px 44px;
-                        background-repeat: no-repeat;
-                        background-image: url("https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg");
-                        background-position: center center;
-                        width: 16px;
                     }
 
                     .gn-link-mac {
@@ -166,18 +235,45 @@ html {
                         background-size: cover;
                         width: 16px;
                     }
-
-                    .gn-link-bag {
-                        background-size: 14px 44px;
-                        background-repeat: no-repeat;
-                        background-image: url("https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg");
-                        background-position: center center;
-                        background-origin: content-box;
-                        background-size: cover;
-                        width: 14px;
-                    }
                 }
             }
+        }
+
+        .gn-link {
+            display: inline-block;
+            padding: 0 10px;
+        }
+
+        .gn-link-text {
+            position: absolute;
+            top: 50%;
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+            clip-path: inset(0px 0px 99.9% 99.9%);
+            overflow: hidden;
+            height: 1px;
+            width: 1px;
+            padding: 0;
+            border: 0;
+        }
+
+        .gn-link-apple {
+            background-size: 16px 44px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/apple/image_large.svg");
+            background-position: center center;
+            width: 16px;
+        }
+
+        .gn-link-bag {
+            background-size: 14px 44px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 14px;
         }
     }
 
@@ -203,6 +299,30 @@ html {
                 .gn-header {
                     display: block;
                 }
+            }
+
+            .gn-bag {
+                right: 0;
+                display: none;
+                position: absolute;
+                top: 0;
+                width: auto;
+                z-index: 1;
+            }
+
+            .gn-header {
+                .gn-bag-small {
+                    display: block;
+                }
+            }
+
+            .gn-list {
+                display: block;
+                position: absolute;
+                top: 3.52941em;
+                left: 0;
+                right: 0;
+                bottom: 0;
             }
         }
     }
